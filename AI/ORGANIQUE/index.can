@@ -1,0 +1,4 @@
+import horizon;
+default main(){
+	horizon.run(__DIR__,'0.0.0.0',80);	
+}

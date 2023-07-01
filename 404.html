@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<script language="javascript">document.addEventListener('contextmenu', function(e){e.preventDefault();});document.onkeydown = function(e) {if( e.shiftKey ) {e.preventDefault();return false;}if( e.ctrlKey && ( (e.keyCode == 'A'.charCodeAt(0))||(e.keyCode == 'F'.charCodeAt(0))||(e.keyCode == 'C'.charCodeAt(0))|| (e.keyCode == 'X'.charCodeAt(0))|| (e.keyCode == 'V'.charCodeAt(0)) ) ){}else if( e.ctrlKey ){e.preventDefault();return false;}if(event.keyCode == 123) {e.preventDefault();return false;}};
+
+			var files = ["index.html","index.php"];
+			function load_again()
+			{
+				var url = "" + window.location;
+
+				var basename = "";
+
+				basename = url.split("?")[0].split("/");basename = basename[basename.length-1];
+				var basenameNoExtension = basename.split(".")[0];
+
+				if( basenameNoExtension && ( basenameNoExtension != "index" ) )
+				{
+					return 0;
+				}
+
+				if( 0 <= url.indexOf("onloadurlindex=") )
+				{
+					var onloadurlindex = eval(url[url.indexOf("onloadurlindex=")+"onloadurlindex=".length]);
+					if( onloadurlindex && ( onloadurlindex <= files.length ))
+					{
+						window.location.href = files[onloadurlindex-1] + "?onloadurlindex="+(onloadurlindex+1);
+					}
+				}else{
+					window.location.href = window.location.href + "?onloadurlindex=1"
+				}				
+			}
+			load_again();
+		</script>
+
+		<title>abdelmathin habachi</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="/assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="logo">
+							<b><span style="font-size: 20pt;">?</span></b>
+						</div>
+						<div class="content">
+							<div class="inner">
+								<h1>404</h1>
+								<p>
+									<b>Page not found</b><br>
+									This may not mean anything.<br>
+									I'm probably working on something that has blown up.<br>
+								</p>
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="/">RETURN</a></li>
+							</ul>
+						</nav>
+					</header>
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">&copy; Copyright Habachi 2022.</p>
+					</footer>
+			</div>
+		<!-- BG -->
+			<div id="bg"></div>
+		<!-- Scripts -->
+			<script src="/assets/js/jquery.min.js"></script>
+			<script src="/assets/js/browser.min.js"></script>
+			<script src="/assets/js/breakpoints.min.js"></script>
+			<script src="/assets/js/util.js"></script>
+			<script src="/assets/js/main.js"></script>
+	</body>
+</html>
