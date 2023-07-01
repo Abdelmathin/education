@@ -1,0 +1,30 @@
+<head>
+	<title>علوم الحياة والارض</title>
+	<script language="javascript">document.addEventListener('contextmenu', function(e){e.preventDefault();});document.onkeydown = function(e) {if( e.shiftKey ) {e.preventDefault();return false;}if( e.ctrlKey && ( (e.keyCode == 'A'.charCodeAt(0))||(e.keyCode == 'F'.charCodeAt(0))||(e.keyCode == 'C'.charCodeAt(0))|| (e.keyCode == 'X'.charCodeAt(0))|| (e.keyCode == 'V'.charCodeAt(0)) ) ){}else if( e.ctrlKey ){e.preventDefault();return false;}if(event.keyCode == 123) {e.preventDefault();return false;}}</script>
+	<meta charset="utf-8" name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,scalable=no">
+	<link rel="stylesheet" href="../../SMP/M18/src/css/M18/qcm_smp_m18.css">
+</head>
+<body>
+	<div class="my_container">
+		<!-- Created by abdelmathin habachi at 21-09-2020 : 15:00 GMT+1 -->
+		<center id="result_panl">
+			<p id="timer" style="position:absolute;top:0%;left:2%;"></p>
+			<p id="points" style="position:absolute;top:0%;right:2%;">-2</p>
+			<div id="madiv" class="hidden">
+				<div class="board" id="board">
+				</div>
+				<br>
+				<div id="choices_box" class="choices_box">
+					<button id="choice_1" class="choice" onclick="function_name(this,1)"></button>
+					<button id="choice_2" class="choice" onclick="function_name(this,2)"></button>
+					<button id="choice_3" class="choice" onclick="function_name(this,3)"></button>
+					<button id="choice_4" class="choice" onclick="function_name(this,4)"></button>
+				</div>
+			</div>
+			<!-- <button class="devlopper_button" onclick="nextquestion(0)">next</button> -->
+		</center>
+		<script type="text/javascript" src="../../SMP/M18/src/js/functions.js"></script>
+		<script type="text/javascript" src="src/qcm_smp_svt.js"></script>
+		<script type="text/javascript" src="../../SMP/M18/src/js/qcm_game.js"></script>
+	</div>
+</body>

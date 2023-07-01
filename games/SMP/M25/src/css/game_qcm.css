@@ -1,0 +1,13 @@
+.devlopper_button{
+	position:absolute;right:5%;top:10%;width:10%;height:10%;font-size:140%;background-color:rgba(0,0,0,0);border-radius:10px;
+}
+
+.choice{
+	color:#000;
+	border:1px solid #009DFF;
+	border-radius:10px;
+	background-color: #009DFF;
+	font-size: 140%;
+	padding:0.25%;
+	margin:0.6%;
+}

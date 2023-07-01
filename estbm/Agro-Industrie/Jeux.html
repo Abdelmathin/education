@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>abdelmathin habachi</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="/../../assets/css/noscript.css" /></noscript>
+
+
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+		<article id="None">
+		</article>
+			<div id="wrapper">
+				<header id="header">
+					<div class="logo">
+						<span id="timer" style="font-size: 16pt;">15</span>
+					</div>
+					<div class="content">
+						<div class="inner">
+							<i>
+								<span id="board">
+								</span>
+							</i>
+						</div>
+					</div>
+					<nav>
+						<ul id="choices">
+							<li><a id="choice_id" href="#intro">answer</a></li>
+						</ul>
+					</nav>
+				</header>
+				<!-- Main -->
+					<div id="main" style="width: 110%;">
+						<!-- Intro -->
+							<article id="intro">
+								<h2 id="Intro_Title" class="major">You Lose!</h2>
+								<p id="error_board">
+								</p>
+
+								<h2 class="major">Totale Time: 
+									<span id="totale_timer_record"></span>
+								</h2>
+								<center><h6 class="copyright"></h6></center>
+							</article>
+					</div>
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="copyright"></div>
+					</footer>
+			</div>
+		<!-- BG -->
+			<div id="bg"></div>
+		<!-- Scripts -->
+			<script src="../../assets/js/jquery.min.js"></script>
+			<script src="../../assets/js/browser.min.js"></script>
+			<script src="../../assets/js/breakpoints.min.js"></script>
+			<script src="../../assets/js/util.js"></script>
+			<script src="../../assets/js/main.js"></script>
+			<script>
+				const paragraph = `<p>Copyright &copy; ABDELMATHIN HABACHI ${new Date().getFullYear()}</p>`;
+				var copyright_buttons = document.getElementsByClassName('copyright');
+				for (var i = 0; i < copyright_buttons.length ; i++)
+				{
+			      copyright_buttons[i].innerHTML = paragraph;
+				}
+		    </script>
+
+		<!-- Initialization -->
+		    <script type="text/javascript">
+		    	var url = "" + window.location;
+		    	var dirname = "" + url.split("&m=")[1].split("#")[0];
+				
+				var basename = (dirname.slice(1,dirname.length-1).split(")")[0].replace("-","").slice(0,5) + "-QCM" + dirname.split(")")[1] + ".js" );
+				var jsurl = decodeURI("./src/" + dirname + "/" + basename);
+				
+				// window.location = jsurl;
+
+
+
+				var script = document.createElement('script');
+				script.type = 'text/javascript';
+				script.onload = function() {
+					var script2 = document.createElement('script');
+					script2.type = 'text/javascript';
+					script2.src = "../../assets/js/QCM.js";
+					document.body.appendChild(script2);
+
+					//document.write('<script src="../../assets/js/QCM.js"><\/script>');
+				    //document.write("111111111111111");
+				}
+				script.src = jsurl;
+				document.body.appendChild(script);
+
+		    	/*document.write("<script src=\""+jsurl+"\"><\/script>");*/
+
+
+
+		    </script>
+
+
+
+</body>
+</html>
+
