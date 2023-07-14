@@ -1,3 +1,4 @@
 gihubPages:
   customHeaders:
     Server: MyCustomServer
+    S-Header: Uid=6644
